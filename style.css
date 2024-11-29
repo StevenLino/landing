@@ -22,6 +22,11 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+.gradient-bg {
+  background: linear-gradient(-135deg, #4b0000, #b22222);
+  color: white; /* Color del texto si lo necesitas */
+}
+
 body {
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
@@ -1540,3 +1545,7 @@ a.btn-link.text-light:after {
   background-size: cover;
   transition: transform .3s ease-out;
 }
+
+/*footer {
+  background-color: #111;
+}*/
