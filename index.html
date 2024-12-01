@@ -257,10 +257,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+            style="background-image: url('images/chester_bennington_____wallpaper__by_aliroman2018_dc9gvt1-fullview.jpg'); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: overlay;">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Menu</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
@@ -270,8 +270,23 @@
                 <li class="nav-item">
                   <a class="nav-link text-light" href="#home">Home</a>
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                   <a class="nav-link text-light" href="#recomendaciones">Recomendaciones</a>
+                </li>-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Recomendaciones</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
+                    <li>
+                      <a href="#best-songs" class="dropdown-item item-anchor ">Canciones</a>
+                    </li>
+                    <li>
+                      <a href="#recomendaciones" class="dropdown-item item-anchor">Álbumes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#Lanzamientos 2024">Lanzamientos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-light" href="#suscribirse">Suscripciones</a>
@@ -338,7 +353,7 @@
             <p> Aquí no hay algoritmos, anuncios molestos e invasivos. Explora lo mejor del género, comparte tus
               bandas favoritas, y celebra con nosotros la energía que solo el rock alternativo puede transmitir. Únete a
               nuestra comunidad y mantén viva la llama del auténtico espíritu rockero.</p>
-            <a href="#" class="btn btn-dark text-uppercase mt-3">Ver más</a>
+            <a href="#best-songs" class="btn btn-dark text-uppercase mt-3">Ver más</a>
           </div>
         </div>
         <div class="col-md-6 column-container">
@@ -567,11 +582,11 @@
     </div>
   </section> -->
 
-  <section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden bg-white">
+  <section id="best-songs" class="best-sellers product-carousel py-5 position-relative overflow-hidden bg-white">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
         <h4 class="text-uppercase">Recomendaciones de canciones</h4>
-        <a href="index.html" class="btn-link">View All Products</a>
+        <!--<a href="index.html" class="btn-link">View All Products</a>-->
       </div>
       <div class="swiper product-swiper open-up" data-aos="zoom-out">
         <div class="swiper-wrapper d-flex">
@@ -643,6 +658,23 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/boulevard_greenDay.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Boulevard of Broken Dreams - Green Day</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none"
+                    data-after="Reproducciones Spotify -> 103 millones"><span>Visualizaciones Youtube -> 11
+                      millones</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -686,7 +718,7 @@
             <blockquote>
               <div class="review-title text-uppercase">Meteora</div>
               <img src="images/linkin-park-meteora.jpg" alt="Meteora_img" width="500" height="236"
-                class="text-center rounded">
+                class="text-center rounded post-grid-image img-fluid">
               <p style="font-size: 18px;">“Es el segundo álbum del grupo Linkin Park, lanzado el 25 de marzo de 2003. El
                 álbum ha vendido más de
                 20 millones de copias en todo el mundo, 4 millones sólo en los EE.UU. Sólo en su primera semana vendió
@@ -698,7 +730,8 @@
           <div class="testimonial-item text-center">
             <blockquote>
               <div class="review-title text-uppercase">American Idiot</div>
-              <img src="images/GreenDayAI.jpg" alt="Meteora_img" width="300" height="314" class="text-center rounded">
+              <img src="images/GreenDayAI.jpg" alt="Meteora_img" width="300" height="314"
+                class="text-center rounded post-grid-image img-fluid">
               <p style="font-size: 18px;">“Este séptimo álbum de la banda Green Day,un álbum
                 conceptual inspirado en la situación que vivía Estados Unidos durante la presidencia de George W. Bush,
                 que se convirtió en uno de los más importantes de su época. ”</p>
@@ -710,7 +743,7 @@
             <blockquote>
               <div class="review-title text-uppercase">Divisions</div>
               <img src="images/Starset_-_Divisions.png" alt="Meteora_img" width="300" height="300"
-                class="text-center rounded">
+                class="text-center rounded post-grid-image img-fluid">
               <p style="font-size: 18px;">“Es el tercer álbum de estudio de STARSET. Liderado por Dustin Bates, STARSET
                 es conocido por sus programas elaborados y sus álbumes de rock cinematográficos detallados.”</p>
             </blockquote>
@@ -721,7 +754,7 @@
             <blockquote>
               <div class="review-title text-uppercase">ONE X</div>
               <img src="images/OneXtreedaysgrace.jpg" alt="ONE X_img" width="250" height="250"
-                class="text-center rounded">
+                class="text-center rounded post-grid-image img-fluid">
               <p style="font-size: 18px;">“One-X, lanzado en 2006, es el segundo álbum de estudio de Three Days Grace,
                 este disco captura una explosión
                 emocional de frustración, desesperanza y, finalmente, resiliencia, reflejando la experiencia personal
@@ -733,7 +766,7 @@
           <div class="testimonial-item text-center">
             <blockquote>
               <div class="review-title text-uppercase">Fallen</div>
-              <img src="images/fallen.jpg" alt="Fallen_img" class="text-center rounded">
+              <img src="images/fallen.jpg" alt="Fallen_img" class="text-center rounded post-grid-image img-fluid">
               <p style="font-size: 18px;">El álbum produjo cuatro sencillos: Bring Me to Life, Going Under, My
                 Immortal y Everybody's Fool. Bring Me To Life es de las canciones más escuchadas del 2003 y una de las
                 más
@@ -1118,7 +1151,7 @@
     <div class="border-top py-4 bg-white">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 d-flex flex-wrap">
+          <!-- <div class="col-md-6 d-flex flex-wrap">
             <div class="shipping">
               <span>We ship with:</span>
               <img src="images/arct-icon.png" alt="icon">
@@ -1130,11 +1163,11 @@
               <img src="images/paypal-card.png" alt="card">
               <img src="images/master-card.png" alt="card">
             </div>
-          </div>
+          </div> -->
           <div class="col-md-6 text-end">
             <p>© Copyright 2024. All rights reserved. Design by <a href="https://templatesjungle.com"
                 target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com"
-                target="_blank">ThemeWagon</a><br> Modified by <a href="https://github.com/StevenLino"
+                target="_blank">ThemeWagon</a> Modified by <a href="https://github.com/StevenLino"
                 target="_blank">StevenLino</a> </p>
           </div>
         </div>
