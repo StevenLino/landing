@@ -1542,6 +1542,14 @@ a.btn-link.text-light:after {
   transition: transform .3s ease-out;
 }
 
-/*footer {
-  background-color: #111;
-}*/
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="gray" stroke-width="1"/></svg>') no-repeat right center;
+  background-size: 1rem; /* Tamaño de la flecha */
+  background-position: calc(100% - 10px) center; /* Ajusta la flecha */
+  padding-right: 2rem; /* Espacio para la flecha */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

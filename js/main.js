@@ -25,7 +25,7 @@ let sendData = () => {
             return response.json(); // Procesa la respuesta como JSON
         })
         .then(result => {
-            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
+            alert('¡Listo!, ahora ya puedes disfrutar de los mejores éxitos del rock alternativo sin molestos anuncios'); // Maneja la respuesta con un mensaje
             form.reset()
 
             // Recuperación de datos
@@ -101,34 +101,71 @@ let ready = () => {
     getData();
 }
 
+// let loaded = () => {
+//     let myform = document.getElementById('form');
+
+//     myform.addEventListener('submit', (eventSubmit) => {
+//         eventSubmit.preventDefault();
+
+//         const emailElement = document.querySelector('.form-control-lg');
+//         const emailText = emailElement.value;
+
+//         if (emailText.length === 0) {
+//             emailElement.focus()
+//             emailElement.animate(
+//                 [
+//                     { transform: "translateX(0)" },
+//                     { transform: "translateX(50px)" },
+//                     { transform: "translateX(-50px)" },
+//                     { transform: "translateX(0)" }
+//                 ],
+//                 {
+//                     duration: 400,
+//                     easing: "linear",
+//                 }
+//             )
+//             return;
+//         }
+//         sendData();
+//     })
+// }
+
 let loaded = () => {
     let myform = document.getElementById('form');
 
     myform.addEventListener('submit', (eventSubmit) => {
         eventSubmit.preventDefault();
 
-        const emailElement = document.querySelector('.form-control-lg');
-        const emailText = emailElement.value;
+        let isValid = true; // Variable para comprobar si todo está correcto
+        const inputs = myform.querySelectorAll('.form-control-lg'); // Todos los inputs
+        inputs.forEach((input) => {
+            if (input.value.trim() === '') {
+                isValid = false;
 
-        if (emailText.length === 0) {
-            emailElement.focus()
-            emailElement.animate(
-                [
-                    { transform: "translateX(0)" },
-                    { transform: "translateX(50px)" },
-                    { transform: "translateX(-50px)" },
-                    { transform: "translateX(0)" }
-                ],
-                {
-                    duration: 400,
-                    easing: "linear",
-                }
-            )
-            return;
+                // Efecto visual para el campo vacío
+                input.focus();
+                input.animate(
+                    [
+                        { transform: "translateX(0)" },
+                        { transform: "translateX(50px)" },
+                        { transform: "translateX(-50px)" },
+                        { transform: "translateX(0)" }
+                    ],
+                    {
+                        duration: 400,
+                        easing: "linear",
+                    }
+                );
+                return; // Salir del bucle actual
+            }
+        });
+
+        // Si todos los campos son válidos, envía los datos
+        if (isValid) {
+            sendData();
         }
-        sendData();
-    })
-}
+    });
+};
 
 
 window.addEventListener("DOMContentLoaded", ready);
